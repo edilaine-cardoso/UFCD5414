@@ -68,3 +68,89 @@ footer img {
     float: right;
     margin: 0 0 10px 10px;
 }
+
+
+/* Mobile*/
+
+@media (max-width: 939px) {
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+       padding: 0 15px;
+    }
+
+    h1 {
+        background-image: none;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    p {
+        padding: 0 5px;
+        text-indent: 0;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    figure {
+        margin: 20px; 
+        padding: 10px ;
+        width: auto;
+        max-width: 100%;
+    }
+    img {
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+    }
+    #centro-distribuicao,
+    #familia-pelho {
+        width: 90%;
+        margin: 20px auto;
+        float: none; 
+        display: block;
+    }
+  
+
+
+    ul {
+        
+        padding-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    footer img {
+        width: 80px;
+        margin: 0 auto 15px;
+        display: block;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+   #familia-pelho {
+        max-width: 75%; 
+    }
+    #centro-distribuicao {
+        max-width: 85%; 
+    }
+}
+
+@media (min-width: 721px) and (max-width: 939px) {
+    #familia-pelho {
+        max-width: 65%;
+    }
+    #centro-distribuicao {
+        max-width: 75%;
+    }
+}
