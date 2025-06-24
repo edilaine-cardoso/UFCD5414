@@ -1,6 +1,6 @@
   <?php
    $cabecalho_title="Sobre Mirro Fashion";
-   $cabecalho_css="<link rel='stylesheet' href='css/sobre.css>";
+   $cabecalho_css="<link rel='stylesheet' href='css/sobre.css'>";
     include_once("cabecalho.php");
    ?>
 
@@ -76,10 +76,5 @@
         <li>Mais de um milhão de funcionários em todo o mundo</li>
     </ul>
 
-    <footer>
-        <img src="img/logo.png" alt="Logo Mirror Fashion">
-
-        &copy; Copyright Mirror Fashion
-    </footer>
 
 <?php include("rodape.php")?>

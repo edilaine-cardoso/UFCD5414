@@ -9,6 +9,7 @@ body {
 h1 {
     background-image: url(../img/sobre-background.jpg);
     padding: 10px;
+   
 }
 
 h1+p {
@@ -69,26 +70,72 @@ footer img {
     margin: 0 0 10px 10px;
 }
 
+/* Footer styles */
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    background-size: cover;
+    clear: both;
+    padding: 20px 0;
+   
+}
 
-/* Mobile*/
+footer .container {
+    position: relative;
+  
+}
 
+footer img {
+    width: 94px;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.social {
+    
+    position: absolute;
+    right: 0;
+    top: 12px;
+    
+}
+
+.social li {
+
+    float: left;
+    margin-left: 25px;
+}
+
+.social a {
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+    
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="x.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+    background-image: url(../img/googleplus.png);
+}
+
+/* Responsive styles */
 @media (max-width: 939px) {
-    *, *::before, *::after {
-        box-sizing: border-box;
-    }
-
     body {
-        width: 100%;
         max-width: 100%;
-        margin: 0 auto;
-       padding: 0 15px;
+        padding: 0 10px;
     }
 
     h1 {
-        background-image: none;
-        padding: 10px 0;
-        text-align: center;
-        font-size: 2em;
+       /* background-image: none;*/
+        padding: 15px 0;
+        font-size: 1em;
+        color: #333;
     }
 
     p {
@@ -99,50 +146,70 @@ footer img {
     }
 
     figure {
-        margin: 20px; 
-        padding: 10px ;
-        width: auto;
+        margin: 20px 0;
+        padding: 10px;
+        width: 100%;
         max-width: 100%;
     }
+
     img {
-        max-width: 100%; 
-        height: auto; 
-        display: block; 
-        margin: 0 auto; 
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
+
     #centro-distribuicao,
     #familia-pelho {
         width: 90%;
         margin: 20px auto;
-        float: none; 
+        float: none;
         display: block;
-    }
-  
-
-
-    ul {
-        
-        padding-left: 20px;
+        max-width: 100%;
     }
 
     footer {
-        text-align: center;
+        text-align: left;
         padding: 25px 15px;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     footer img {
         width: 80px;
-        margin: 0 auto 15px;
+        margin: 0;
         display: block;
+        flex-shrink: 0;
+    }
+
+    .social {
+        position: static;
+        margin-top: 0;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .social li {
+        /*float: none;*/
+        display: flex;
+        margin-left: 10px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 720px) {
-   #familia-pelho {
-        max-width: 75%; 
+    #familia-pelho {
+        max-width: 75%;
     }
+
     #centro-distribuicao {
-        max-width: 85%; 
+        max-width: 85%;
     }
 }
 
@@ -150,6 +217,7 @@ footer img {
     #familia-pelho {
         max-width: 65%;
     }
+
     #centro-distribuicao {
         max-width: 75%;
     }

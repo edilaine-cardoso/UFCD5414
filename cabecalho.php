@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title> <?php print $cabecalho_title;?>
-        Mirror Fashion</title>
+    <title> <?php print $cabecalho_title;?></title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
