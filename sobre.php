@@ -1,35 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt">
+  <?php
+   $cabecalho_title="Sobre Mirro Fashion";
+   $cabecalho_css="<link rel='stylesheet' href='css/sobre.css>";
+    include_once("cabecalho.php");
+   ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre a Mirror Fashion</title>
-
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
-</head>
-
-<body>
-    <header class="container">
-        <h1><img src="img/logo.png" alt="Mirror Fashion"></h1>
-
-        <nav class="menu-opcoes">
-            <ul>
-                <li><a href="#">Sua Conta</a></li>
-                <li><a href="#">Lista de Desejos</a></li>
-                <li><a href="#">Cartão Fidelidade</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="#">Ajuda</a></li>
-            </ul>
-        </nav>
-    </header>
+ 
 
     <h1>A Mirror Fashion</h1>
 
     <p>
         A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo.
-        Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de
+        Fundada há <?php print date ('y') - 1932; ?> anos, possui filiais em 124 países, sendo líder de mercado com mais de 90% de
         participação em 118 deles.
     </p>
 
@@ -44,7 +25,7 @@
     </figure>
 
     <p>
-        Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.html">nossa loja</a> ou entre em <a href="#">contato</a>
+        Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.php">nossa loja</a> ou entre em <a href="#">contato</a>
         se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.
     </p>
 
@@ -101,6 +82,4 @@
         &copy; Copyright Mirror Fashion
     </footer>
 
-</body>
-
-</html>
+<?php include("rodape.php")?>

@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Mirror Fashion</title>
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
-</head>
-
-<body>
-    <header class="container">
-        <!-- Conteúdo do cabeçalho -->
-        <h1><img src="img/logo.png" alt="Mirror Fashion"></h1>
-
-        <p class="sacola">
-            Nenhum item na sacola de compras
-        </p>
-
-        <nav class="menu-opcoes">
-            <!-- ul>li*5>a -->
-            <ul>
-                <li><a href="#">Sua Conta</a></li>
-                <li><a href="#">Lista de Desejos</a></li>
-                <li><a href="#">Cartão Fidelidade</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="#">Ajuda</a></li>
-            </ul>
-        </nav>
-    </header>
+   <?php
+   $cabecalho_title="Mirro Fashion";
+    include("cabecalho.php");
+   ?>
 
     <section id="main" class="container destaques">
         <!-- Conteúdo principal -->
@@ -80,7 +51,7 @@
                 <ol>
                     <!-- primeiro produto -->
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura1.png" alt="Produto1">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -88,7 +59,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura2.png" alt="Produto2">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -96,7 +67,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura3.png" alt="Produto3">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -104,7 +75,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura4.png" alt="Produto4">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -112,7 +83,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura5.png" alt="Produto5">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -120,7 +91,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura6.png" alt="Produto6">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -134,7 +105,7 @@
                 <h2>Mais Vendidos</h2>
                 <ol>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura7.png" alt="Produto7">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -142,7 +113,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura8.png" alt="Produto8">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -150,7 +121,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura9.png" alt="Produto9">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -158,7 +129,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura10.png" alt="Produto10">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -166,7 +137,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura11.png" alt="Produto11">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -174,7 +145,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="produto.html">
+                        <a href="produto.php">
                             <figure>
                                 <img src="img/produtos/miniatura12.png" alt="Produto12">
                                 <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -186,17 +157,5 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
-
-            <ul class="social">
-                <li><a href="https://www.facebook.com/mirrorfashion">Facebook</a></li>
-                <li><a href="https://x.com/mirrorfashion">Twitter</a></li>
-                <li><a href="https://plus.google.com/mirrorfashion">Google+</a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-
-</html>
+<?php include("rodape.php")?>
+    
